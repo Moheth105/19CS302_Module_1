@@ -1,51 +1,36 @@
 # EX 3 C program to find number of years based on principle,rate & simple interest.
-
 ## DATE:
-08.06.2026
-
 ## AIM:
-To write a C program to find number of years based on principle, rate & simple interest.
+To write a C program to find number of years based on principle,rate & simple interest.
 
 ## Algorithm
 
-1. Start the program.
-2. Declare variables for principal, rate, simple interest and years.
-3. Get the values from the user.
-4. Calculate the number of years using the formula:
-
-   years = (simple interest × 100) / (principal × rate)
-
-5. Display the number of years.
-6. Stop the program.
-
+1. Start. 
+2. Declare the variables. 
+3. Prompt the user to enter a value. 
+4. Read the value using scanf. 
+5. Calculate the number of years using the formula: 
+6. End .
+   
 ## Program:
-
-```c
-#include <stdio.h>
-
-int main()
-{
-    float p, r, si, y;
-
-    scanf("%f %f %f", &p, &r, &si);
-
-    y = (si * 100) / (p * r);
-
-    printf("%.2f", y);
-
-    return 0;
+```
+#include <stdio.h> 
+#include <math.h> 
+int main() 
+{ 
+float p,n,r,si,ci; 
+scanf("%f%f%f", &p,&n,&r); 
+si=((p*n*r)/100); 
+ci=(p)*(pow((1+ r/100),n)); 
+printf("Simple Interest = %0.2f\nCompound Interest = %0.2f", si,ci); 
+return 0; 
 }
 ```
 
 ## Output:
+![image](https://github.com/user-attachments/assets/4355aa03-68b1-48aa-b155-6a26d41c2b54)
 
-```text
-1000
-5
-500
 
-10.00
-```
 
 ## Result:
-Thus the program was executed and the output was verified successfully.
+Thus, the program is executed and verified successfully. 
